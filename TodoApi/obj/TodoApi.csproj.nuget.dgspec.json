@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/root/TodoApi/TodoApi.csproj": {}
+    "/workspaces/api-example-dotnet/TodoApi/TodoApi.csproj": {}
   },
   "projects": {
-    "/root/TodoApi/TodoApi.csproj": {
+    "/workspaces/api-example-dotnet/TodoApi/TodoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/root/TodoApi/TodoApi.csproj",
+        "projectUniqueName": "/workspaces/api-example-dotnet/TodoApi/TodoApi.csproj",
         "projectName": "TodoApi",
-        "projectPath": "/root/TodoApi/TodoApi.csproj",
-        "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/root/TodoApi/obj/",
+        "projectPath": "/workspaces/api-example-dotnet/TodoApi/TodoApi.csproj",
+        "packagesPath": "/home/vscode/.nuget/packages/",
+        "outputPath": "/workspaces/api-example-dotnet/TodoApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/home/vscode/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -38,9 +38,27 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -65,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }
